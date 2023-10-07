@@ -54,7 +54,7 @@ export default function Home() {
       <S.ContainerHero>
         <Container>
           <Grid container>
-            <Grid item xs={12} xl={7}>
+            <Grid item xs={12} md={7}>
               <S.TextHero>
                 <p>DESIGN · DESENVOLVIMENTO · MARKETING</p>
                 <h3>Posso ajudar sua empresa a</h3>
@@ -69,7 +69,7 @@ export default function Home() {
                 </S.Buttons>
               </S.TextHero>
             </Grid>
-            <Grid item xs={12} xl={5}>
+            <Grid item xs={12} md={5}>
               <S.ImageBlock>
                 <img src={Hero} alt="Imagem do desenvolvedor web" />
               </S.ImageBlock>

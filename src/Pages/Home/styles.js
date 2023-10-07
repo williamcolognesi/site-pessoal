@@ -44,13 +44,14 @@ export const TextHero = styled.div`
   @media (min-width: 900px) {
     h1 {
       font-size: 3.5rem;
+      text-align: start;
     }
     h3 {
       font-size: 28px;
     }
   }
 
-  @media (min-width: 1536px) {
+  @media (min-width: 900px) {
     align-items: start;
     height: 100%;
     justify-content: center;
@@ -73,12 +74,12 @@ export const Buttons = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 32px;
+  gap: 10px;
   button {
     padding: 15px 30px;
   }
 
-  @media (min-width: 1536px) {
+  @media (min-width: 900px) {
     justify-content: start;
   }
 `;
@@ -89,9 +90,12 @@ export const ImageBlock = styled.div`
   align-items: center;
   padding-top: 20px;
   img {
-    width: 90%;
+    width: 80%;
   }
-  @media (max-width: 1535px) {
+  @media (min-width: 600px) and (max-width: 900px) {
+    img {
+      width: 60%;
+    }
   }
 `;
 
