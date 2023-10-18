@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const ContainerHeader = styled.header`
-  padding: 10px 0 10px;
-  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+  padding: 20px 0 20px;
+  background-color: #fff;
   display: flex;
-  @media (min-width: 900px) {
-    background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   ul {
@@ -20,11 +27,11 @@ export const ContainerHeader = styled.header`
     line-height: 21px;
     cursor: pointer;
   }
-  a{
+  a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.55);
   }
-  a:hover{
+  a:hover {
     color: #000;
   }
 `;
@@ -32,9 +39,18 @@ export const ContainerHeader = styled.header`
 export const Logo = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 
   @media (min-width: 900px) {
     justify-content: start;
+    margin-bottom: 0;
   }
+`;
+
+export const HeaderMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  align-items: center;
+  padding: 10px 0 50px;
+  gap: 10px;
 `;

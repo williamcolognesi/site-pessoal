@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ContainerProjeto = styled.section`
   padding: 40px 0 40px;
+  .MuiContainer-root {
+    margin-top: 80px;
+  }
 `;
 
 export const Title = styled.h1`

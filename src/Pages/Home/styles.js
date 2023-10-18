@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ContainerHero = styled.section`
   padding: 48px 0 48px;
+  .MuiContainer-root {
+    margin-top: 80px;
+  }
 `;
 
 export const TextHero = styled.div`
@@ -55,6 +58,7 @@ export const TextHero = styled.div`
     align-items: start;
     height: 100%;
     justify-content: center;
+    margin-top: 0;
   }
 
   @media (max-width: 900px) {

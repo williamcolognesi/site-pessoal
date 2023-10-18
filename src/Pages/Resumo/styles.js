@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ContainerResumeBox = styled.section`
   padding: 40px 0 80px;
+  .MuiContainer-root {
+    margin-top: 80px;
+  }
 `;
 
 export const Subtitle = styled.div`
